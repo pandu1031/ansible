@@ -1,0 +1,13 @@
+[tomcat:vars]
+ansible_ssh_private_key_file = ./mamu1031.pem
+
+[local:vars]
+ansible_ssh_private_key_file = ./mamu1031.pem
+
+
+[tomcat]
+172.31.41.150 ansible_user=ec2-user
+172.31.34.23 ansible_user=ec2-user
+
+[local]
+localhost ansible_user=ec2-user
